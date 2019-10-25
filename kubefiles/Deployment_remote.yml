@@ -19,13 +19,13 @@ spec:
         image: docker.io/burrsutter/todo:5.0.0
         imagePullPolicy: IfNotPresent
         env:
-        - name: QUARKUS.DATASOURCE.URL
+        - name: QUARKUS_DATASOURCE_URL
           value: jdbc:postgresql://postgres:5432/postgresdb
-        - name: QUARKUS.DATASOURCE.USERNAME
+        - name: QUARKUS_DATASOURCE_USERNAME
           value: admin
-        - name: QUARKUS.DATASOURCE.PASSWORD
+        - name: QUARKUS_DATASOURCE_PASSWORD
           value: adminS3cret
-        - name: QUARKUS.HIBERNATE-ORM.DATABASE.GENERATION
+        - name: QUARKUS_HIBERNATE_ORM_DATABASE_GENERATION
           value: none
         ports:
           - containerPort: 8080
